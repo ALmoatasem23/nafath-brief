@@ -66,4 +66,14 @@ Resource: Royal Decree 6/2022 Issuing the Personal Data Protection Law (English 
 
 ## Misconception in My Track
 
+Many people think that if the suspicious-login model scores high accuracy in testing, it is ready to go live.
+That is not true.
+The NIST AI RMF lists seven characteristics of trustworthy AI: valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed.
+They have to be balanced for the context of use.
+A model that catches attackers but cannot explain why it blocked a citizen, or that keeps flagging people who log in from abroad, is still not ready.
+Section 3, "AI Risks and Trustworthiness", says accurate but opaque systems are undesirable.
+
 ## Open Question
+
+How many false positives can the authority accept, and should a flagged login be blocked or just trigger a second check, like a passkey prompt?
+I would test both in a small pilot, because this decides how many real citizens get locked out.
