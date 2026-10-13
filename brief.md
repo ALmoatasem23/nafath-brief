@@ -42,9 +42,27 @@ Resource: Permissions on Android (Android Developers) - https://developer.androi
 
 ## Networking
 
+DNS over HTTPS (DoH) sends a device's DNS lookups, like the one that finds the login site, inside HTTPS.
+The traffic is encrypted and the resolver is authenticated, so attackers on the network cannot easily spy on lookups or divert them to a rogue server.
+But the DoH resolver itself still sees every lookup, DoH does not replace DNSSEC, and the login still needs its own TLS.
+
+Resource: RFC 8484: DNS Queries over HTTPS (DoH) - https://www.rfc-editor.org/rfc/rfc8484.html
+
 ## Cybersecurity
 
+NIST calls a method phishing-resistant when a fake site cannot get the user's secrets, even if the user is fooled.
+This works through verifier name binding, as with WebAuthn passkeys, or channel binding, as with smart cards using client-authenticated TLS.
+Passwords, SMS codes, authenticator app codes and push approvals do not qualify, because a fake site can capture or relay them.
+At AAL2, services must offer at least one phishing-resistant option.
+
+Resource: NIST SP 800-63B-4, Digital Identity Guidelines: Authentication and Authenticator Management - https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63B-4.pdf
+
 ## Data
+
+Under Oman's Personal Data Protection Law (Royal Decree 6/2022), a controller needs explicit consent and must inform citizens in writing first, protect the data, keep records, appoint a data protection officer, report breaches to the ministry and affected people, follow rules for transfers abroad, and get a permit for biometric data.
+One surprise: Article 3 excludes processing by state administrative units within their legal powers, so the authority should confirm which duties apply.
+
+Resource: Royal Decree 6/2022 Issuing the Personal Data Protection Law (English translation, Decree.om) - https://decree.om/2022/rd20220006/
 
 ## Misconception in My Track
 
