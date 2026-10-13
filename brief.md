@@ -12,6 +12,7 @@ Networking protects the connection, including the DNS lookup that finds the logi
 Data covers the legal duties for the personal data the service stores.
 AI adds a model that watches logins and flags suspicious ones.
 If one part is weak, the whole service is weak.
+As an AI track applicant, my focus is the risks that must be managed before an AI model flags suspicious logins on its own.
 
 ## Software
 
